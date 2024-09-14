@@ -23,6 +23,11 @@ public class Arithmetic {
         if (a < b ) {
             System.out.println("Второе число больше чем первое");
         }
+
+        if (a == b) {
+            System.out.println("Первое и второе число равны");
+        }
+
     }
 
 }
