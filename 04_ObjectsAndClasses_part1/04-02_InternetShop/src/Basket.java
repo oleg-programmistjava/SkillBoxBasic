@@ -5,6 +5,8 @@ public class Basket {
     private int totalPrice = 0;
     private int limit;
 
+    private double totalWeight = 0.00;
+
     public Basket() {
         increaseCount(1);
         items = "Список товаров:";
@@ -53,6 +55,10 @@ public class Basket {
                 count + " шт. - " + price;
         totalPrice = totalPrice + count * price;
     }
+
+    public void add(String name,int price, int count, double weight) { }
+
+
 
     public void clear() {
         items = "";
