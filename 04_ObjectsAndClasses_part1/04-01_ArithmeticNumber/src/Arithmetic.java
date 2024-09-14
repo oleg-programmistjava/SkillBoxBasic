@@ -1,16 +1,28 @@
 public class Arithmetic {
 
-    private int a;
-    private int b;
+    int a;
+    int b;
 
     public Arithmetic(int a, int b) {
 
-        System.out.print("Укажите первое число: ");
-        System.out.println(this.a = a);
+        this.a = a;
+        this.b = b;
 
-        System.out.print("Укажите второе число: ");
-        System.out.println(this.b = b);
+    }
 
+    public void printAllArithmetics() {
+        System.out.println("СУММА переданных значений: " + (a+b));
+        System.out.println("ПРОИЗВЕДЕНИЕ переданных значений: " + a*b);
+
+        System.out.println();
+
+        if (a > b) {
+            System.out.println("Первое число больше чем второе");
+        }
+
+        if (a < b ) {
+            System.out.println("Второе число больше чем первое");
+        }
     }
 
 }

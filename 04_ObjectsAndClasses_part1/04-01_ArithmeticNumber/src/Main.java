@@ -1,14 +1,26 @@
-import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
-    private static int inputA = new Random().nextInt(10) + 1;
-    private static int inputB = new Random().nextInt(10) + 1;
-
     public static void main(String[] args) {
+        int inputA = 0;
+        int inputB = 0;
+
         Arithmetic generalArithmetic = new Arithmetic(inputA, inputB);
 
-        //TODO: дописать методы класса Arithmetic
+        System.out.print("Укажите первое число: ");
+        inputA = new Scanner(System.in).nextInt();
+        generalArithmetic.a = inputA;
+
+        System.out.print("Укажите второе число: ");
+        inputB = new Scanner(System.in).nextInt();
+        generalArithmetic.b = inputB;
+
+
+        //TODO: дописать методы класса Arithmetic ( в процессе выполнения)
+
+        System.out.println();
+        generalArithmetic.printAllArithmetics();
     }
 
 }
