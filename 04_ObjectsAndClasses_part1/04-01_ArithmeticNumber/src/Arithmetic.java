@@ -13,11 +13,30 @@ public class Arithmetic {
     }
 
     public void inputNumber() {
-        System.out.print(" - Укажите первое число: ");
-        a = new Scanner(System.in).nextInt();
+        while (a <= 0) {
 
-        System.out.print(" - Укажите второе число: ");
-        b = new Scanner(System.in).nextInt();
+            System.out.print(" - Укажите первое число: ");
+            a = new Scanner(System.in).nextInt();
+
+            if (a <= 0) {
+                System.out.println("ОШИБКА! Число не может быть равно 0 или быть меньше 0!");
+                System.out.println();
+            }
+
+        }
+
+        System.out.println();
+
+        while (b <= 0) {
+
+            System.out.print(" - Укажите второе число: ");
+            b = new Scanner(System.in).nextInt();
+
+            if (b <= 0) {
+                System.out.println("ОШИБКА! Число не может быть равно 0 или быть меньше 0!");
+            }
+
+        }
     }
 
     public void printAllArithmetics() {
