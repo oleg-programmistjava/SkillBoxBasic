@@ -16,8 +16,6 @@ public class Arithmetic {
 
         printComposition();
 
-        System.out.println("---");
-
         printComparingNumbers();
 
 
