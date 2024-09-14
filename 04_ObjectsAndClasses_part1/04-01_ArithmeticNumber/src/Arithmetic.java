@@ -11,21 +11,23 @@ public class Arithmetic {
     }
 
     public void printAllArithmetics() {
-        System.out.println("СУММА переданных значений: " + (a+b));
-        System.out.println("ПРОИЗВЕДЕНИЕ переданных значений: " + a*b);
+        System.out.println("СУММА переданных чисел: " + (a+b) + " | (" + a + " + " + b + ")");
+        System.out.println("ПРОИЗВЕДЕНИЕ переданных чисел: " + a*b + " | (" + a + " * " + b + ")");
 
-        System.out.println();
+        System.out.println("---");
+
+        System.out.println("СРАВНЕНИЕ ЧИСЕЛ ПОКАЗАЛО, ЧТО: ");
 
         if (a > b) {
-            System.out.println("Первое число больше чем второе");
+            System.out.println("- первое число больше, чем второе");
         }
 
         if (a < b ) {
-            System.out.println("Второе число больше чем первое");
+            System.out.println("- второе число больше, чем первое");
         }
 
         if (a == b) {
-            System.out.println("Первое и второе число равны");
+            System.out.println("- первое и второе число равны");
         }
 
     }
