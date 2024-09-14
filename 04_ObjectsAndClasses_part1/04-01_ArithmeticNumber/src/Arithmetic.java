@@ -1,13 +1,23 @@
+import java.util.Scanner;
+
 public class Arithmetic {
 
-    int a;
-    int b;
+    private static int a;
+    private static int b;
 
     public Arithmetic(int a, int b) {
 
         this.a = a;
         this.b = b;
 
+    }
+
+    public void inputNumber() {
+        System.out.print(" - Укажите первое число: ");
+        a = new Scanner(System.in).nextInt();
+
+        System.out.print(" - Укажите второе число: ");
+        b = new Scanner(System.in).nextInt();
     }
 
     public void printAllArithmetics() {

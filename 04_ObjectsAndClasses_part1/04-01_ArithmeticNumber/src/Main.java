@@ -22,13 +22,7 @@ public class Main {
 
         System.out.println("ВВОД ИСХОДНЫХ ДАННЫХ:");
 
-        System.out.print(" - Укажите первое число: ");
-        inputA = new Scanner(System.in).nextInt();
-        generalArithmetic.a = inputA;
-
-        System.out.print(" - Укажите второе число: ");
-        inputB = new Scanner(System.in).nextInt();
-        generalArithmetic.b = inputB;
+        generalArithmetic.inputNumber();
 
         System.out.println();
 
