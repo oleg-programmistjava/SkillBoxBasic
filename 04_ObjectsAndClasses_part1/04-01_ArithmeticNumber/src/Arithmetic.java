@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Arithmetic {
 
-    private static int a;
-    private static int b;
+    private int a;
+    private int b;
 
     public Arithmetic(int a, int b) {
 
