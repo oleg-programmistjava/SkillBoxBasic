@@ -36,7 +36,7 @@ public class Basket {
         add(name, price, 1, 0.0);
     }
 
-    public void add(String name, int price, int count) { add(name, price, count, 0.0); }
+//    public void add(String name, int price, int count) { add(name, price, count, 0.0); }
 
     public void add(String name, int price, int count, double weight) {
 
@@ -54,8 +54,8 @@ public class Basket {
             return;
         }
 
-        items = items + "\n" + name + " - " +
-                count + " шт. - " + price + "руб. - " + "вес: " + weight + " кг.";
+        items = items + "\n- " + name + ": " +
+                count + " шт., " + "Цена: " + price + "руб., " + "Вес: " + weight + " кг.";
         totalPrice = totalPrice + count * price;
 
     }
@@ -81,7 +81,8 @@ public class Basket {
             System.out.println("Корзина пуста");
         } else {
             System.out.println(items);
-            System.out.println(totalPrice);
+            System.out.println("---");
+            System.out.println("Итоговая сумма: " + totalPrice + " руб.");
         }
     }
 }
