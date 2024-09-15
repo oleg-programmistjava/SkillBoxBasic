@@ -36,7 +36,10 @@ public class Basket {
         add(name, price, 1);
     }
 
-    public void add(String name, int price, int count) {
+    public void add(String name, int price, int count) { add(name, price, count, 0.0);}
+
+    public void add(String name, int price, int count, double weight) {
+
         boolean error = false;
         if (contains(name)) {
             error = true;
@@ -54,9 +57,8 @@ public class Basket {
         items = items + "\n" + name + " - " +
                 count + " шт. - " + price;
         totalPrice = totalPrice + count * price;
-    }
 
-    public void add(String name,int price, int count, double weight) { }
+    }
 
 
 
