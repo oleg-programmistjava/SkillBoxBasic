@@ -63,15 +63,13 @@ public class Basket {
 
     }
 
+    public int getTotalPrice() { return totalPrice; }
 
+    public double getTotalWeight() { return totalWeight; }
 
     public void clear() {
         items = "";
         totalPrice = 0;
-    }
-
-    public int getTotalPrice() {
-        return totalPrice;
     }
 
     public boolean contains(String name) {
@@ -85,8 +83,8 @@ public class Basket {
         } else {
             System.out.println(items);
             System.out.println("---");
-            System.out.println("Итоговая сумма: " + totalPrice + " руб.");
-            System.out.println("Итоговый вес: " + totalWeight + " кг.");
+            System.out.println("Итоговая сумма: " + getTotalPrice() + " руб.");
+            System.out.println("Итоговый вес: " + getTotalWeight() + " кг.");
         }
     }
 }
