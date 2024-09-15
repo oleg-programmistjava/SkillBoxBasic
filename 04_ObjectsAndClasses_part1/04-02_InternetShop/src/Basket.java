@@ -13,21 +13,6 @@ public class Basket {
         this.limit = 1000000;
     }
 
-    public Basket(int limit) {
-        this();
-        this.limit = limit;
-    }
-
-    public Basket(String items, int totalPrice) {
-        this();
-        this.items = this.items + items;
-        this.totalPrice = totalPrice;
-    }
-
-    public static int getCount() {
-        return count;
-    }
-
     public static void increaseCount(int count) {
         Basket.count = Basket.count + count;
     }
@@ -35,8 +20,6 @@ public class Basket {
     public void add(String name, int price) {
         add(name, price, 1, 0.0);
     }
-
-//    public void add(String name, int price, int count) { add(name, price, count, 0.0); }
 
     public void add(String name, int price, double weight) { add(name, price, 1, weight); }
 
